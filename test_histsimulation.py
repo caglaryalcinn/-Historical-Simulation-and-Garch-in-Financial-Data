@@ -16,8 +16,8 @@ print(portfolio_log.tail())
 
 # draw
 HistoricalSimulation.plot_portfolios(
-    TümVeri=portfolio_all,
-    LogSonYarı=portfolio_log
+    basic_all=portfolio_all,
+    log_half=portfolio_log
 )
 # get ewmas
 son_gun_ewma = HistoricalSimulation.calculate_ewma_volatility(close_prices)
