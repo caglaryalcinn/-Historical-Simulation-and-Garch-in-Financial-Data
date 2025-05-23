@@ -1,7 +1,10 @@
-# Get Data
+from HistoricalSimulation import HistoricalSimulation
+from Dataf import Dataf
+
+# get data
 close_prices = Dataf.get_close_prices('AAPL', start='2023-01-01', end='2024-01-01')
 
-# Basic Simulation 
+# basic simulation 
 portfolio_all = HistoricalSimulation.simulate_simple(close_prices)
 print("All Data Simulation (last 5 values):")
 print(portfolio_all.tail())
